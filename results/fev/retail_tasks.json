@@ -1,0 +1,22 @@
+[
+  "favorita_stores_1D",
+  "favorita_stores_1M",
+  "favorita_stores_1W",
+  "favorita_transactions_1D",
+  "favorita_transactions_1M",
+  "favorita_transactions_1W",
+  "hermes",
+  "hierarchical_sales_1D",
+  "hierarchical_sales_1W",
+  "m5_1D",
+  "m5_1M",
+  "m5_1W",
+  "restaurant",
+  "rohlik_orders_1D",
+  "rohlik_orders_1W",
+  "rohlik_sales_1D",
+  "rohlik_sales_1W",
+  "rossmann_1D",
+  "rossmann_1W",
+  "walmart"
+]

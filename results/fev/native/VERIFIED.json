@@ -1,0 +1,16 @@
+{
+  "issue_sha256": "a8d17a4f2287ded751508e1043901379951738e25134e685e31b330b24f89320",
+  "panel": {
+    "tasks": 100,
+    "windows": 1308,
+    "observed": 8926250
+  },
+  "exact_stock_task_reductions": 400,
+  "window_reduction_discrepancies": [],
+  "upstream_pretraining_overlap_flags": 0,
+  "seconds": 397.4147963839996,
+  "outputs": {
+    "FEV_EXPORT.csv": "1d6ed3da1d83bcb255b071756e00892f9af5944fdd3995ac0c3a654e6d20c88c",
+    "WINDOWS.json": "37333d3c4557f9d510e87b4269b68d0958fab05aa72f7b6ae80a9cbd6f514d4d"
+  }
+}

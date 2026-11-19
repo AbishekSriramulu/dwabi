@@ -1,0 +1,17 @@
+group,field,model,metric,tasks,candidate_raw_finite,field_size,rank,skill_rank,win_rate,skill,win_leaders,skill_leaders
+all,default_insertion,D-wabi,SQL,100,100,36,1,1,92.17142857142858,51.5850976895762,D-wabi,D-wabi
+all,default_insertion,D-wabi,WQL,100,100,36,1,1,90.6857142857143,55.66841548309287,D-wabi,D-wabi
+all,default_insertion,D-wabi,WAPE,100,100,36,1,3,88.17142857142856,43.58145084262145,D-wabi,ci-proto
+all,default_insertion,D-wabi,MASE,100,100,36,1,3,88.62857142857142,39.90659894443904,D-wabi,ci-proto
+retail,default_insertion,D-wabi,SQL,20,20,36,1,1,94.57142857142857,46.92538034355393,D-wabi,D-wabi
+retail,default_insertion,D-wabi,WQL,20,20,36,2,2,94.71428571428571,52.54566434332701,timeh2o-v1,timeh2o-v1
+retail,default_insertion,D-wabi,WAPE,20,20,36,2,2,91.71428571428571,39.98112876534873,timeh2o-v1,timeh2o-v1
+retail,default_insertion,D-wabi,MASE,20,20,36,2,3,90.99999999999999,34.269399082164654,timeh2o-v1,timeh2o-v1
+all,expanded,D-wabi,SQL,100,100,41,1,2,89.97499999999998,51.5850976895762,D-wabi,TimeRSI-1.5
+all,expanded,D-wabi,WQL,100,100,41,1,3,88.62499999999999,55.66841548309287,D-wabi,TimeRSI-1.5
+all,expanded,D-wabi,WAPE,100,100,41,2,5,85.80000000000003,43.58145084262145,TimeRSI-1.5,TimeRSI-1.5
+all,expanded,D-wabi,MASE,100,100,41,1,5,85.9,39.90659894443904,D-wabi,TimeRSI-1.5
+retail,expanded,D-wabi,SQL,20,20,41,1,1,92.25,46.92538034355393,D-wabi,D-wabi
+retail,expanded,D-wabi,WQL,20,20,41,1,3,92.62500000000001,52.54566434332701,D-wabi,timeh2o-v1
+retail,expanded,D-wabi,WAPE,20,20,41,3,5,88.75000000000001,39.98112876534873,timeh2o-v1,PDM-Nano
+retail,expanded,D-wabi,MASE,20,20,41,3,6,87.5,34.269399082164654,timeh2o-v1,TimeRSI-1.5

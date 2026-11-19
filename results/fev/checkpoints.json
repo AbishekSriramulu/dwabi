@@ -1,0 +1,84 @@
+{
+  "t0": {
+    "repo": "theforecastingcompany/t0-gamma",
+    "revision": "fef67abad3eed4f227c7b536a6e8ee4e9ab1080d",
+    "package": "tfc-t0",
+    "version": "0.6.0",
+    "weights": {
+      "model.safetensors": "1603e255629be22ea45518b502f16c55d06821c7090a1a851673e779e9c245a6",
+      "config.json": "8812c71c56ed97c7e765f7381442b98d91a30804a6b8651643d3ff9fde57d942"
+    }
+  },
+  "ci": {
+    "repo": "ContinuousIntelligence/ci-proto",
+    "revision": "ee3031351a151e3f6febf8c62b53e6ea1008bef6",
+    "package": "continuousintelligence",
+    "version": "0.1.0",
+    "weights": {
+      "model.ckpt": "0855f78f231f4313257bd81adf7052cdd33ef3faf26417c0d7ff570c3ee731e6",
+      "config.json": "5d8b2b07b517c4f7ae98fa4c9a29b5b4b00e13d0d2a0f86f0f498fbe78e87c93",
+      "tta.json": "970c4bf132d1a7aea9850a2c6906e2089ff5c6290b8a6d2aa508d224d2fd390a"
+    }
+  },
+  "timestral": {
+    "repo": "mistralai/Timestral-209M",
+    "revision": "9874d252ab0aae16f7f7c999f98f98d6ad7d8365",
+    "package": "timestral",
+    "version": "1.0.0",
+    "weights": {
+      "model.safetensors": "1456effb9927e3daa8c7234f10497e3424233869245a9c72b8ecebaf7ad2b7fa",
+      "config.json": "1764139bb6d37ee5ff543f470495c086cfa6c373f7134fc61c7e3d844538bfd8"
+    }
+  },
+  "tirex": {
+    "repo": "NX-AI/TiRex-2-fevbench",
+    "revision": "acd6153b8ee2179f38cfd3cc4fd64a3c045a424f",
+    "package": "tirex-2",
+    "version": "0.1.0",
+    "weights": {
+      "model-config.yaml": "cddbe6d0be4919cb7b0cad747fb19a295264e129d1c0790cf62133b4cb5da727",
+      "model.ckpt": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1"
+    }
+  },
+  "timesfm3": {
+    "repo": "google/timesfm-3.0-pytorch",
+    "revision": "c71907076f28b1241d1fccc37efd183d0912cd13",
+    "package": "timesfm",
+    "version": "2.0.2",
+    "weights": {
+      "model.safetensors": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da",
+      "config.json": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6"
+    }
+  },
+  "chronos2": {
+    "repo": "amazon/chronos-2",
+    "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "package": "timecopilot-chronos-forecasting",
+    "version": "0.2.1",
+    "weights": {
+      "config.json": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+      "model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42"
+    }
+  },
+  "toto2": {
+    "repo": "Datadog/Toto-2.0-1B",
+    "revision": "1604e1a5242884fb9848f88c4ced14f4dc62d9d3",
+    "package": "timecopilot-toto-2",
+    "version": "0.1.1",
+    "weights": {
+      "config.json": "c8aa025e7155b78e01e257f79ec1cf610205b720007bc7369f7fc6acf2328eed",
+      "model.safetensors": "eabb9dfae622fdb2f19744a46f1e9c4e5ed6ee0d3c6cba7c227865d39974658f"
+    }
+  },
+  "timeh2o": {
+    "repo": "h2oai/timeh2o-v1",
+    "revision": "1310be782553943a4c520d2810a98ce8f56b2709",
+    "package": "h2ofm",
+    "version": "0.43.0",
+    "weights": {
+      "config.json": "df91c76f30ad140f9d89b89cd4468ae1e0338d8fcc746e5b1dfa1dc471815685",
+      "model.safetensors": "f9332b58bbf1b64e4fc91585b2163c32c9ceaf2a1434c18c67846e00c57e4e47"
+    },
+    "license": "h2o-model-non-commercial-licence-v1.0"
+  }
+}

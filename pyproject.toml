@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dwabi"
+version = "0.1.1.post2"
+description = "Walk-forward quantile ensembles of user-supplied forecasters"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "polars>=1.25", "utilsforecast>=0.2.17"]
+
+[project.urls]
+Source = "https://github.com/AbishekSriramulu/dwabi"
+Results = "https://github.com/AbishekSriramulu/dwabi/blob/main/results/fev/README.md"
+Issues = "https://github.com/AbishekSriramulu/dwabi/issues"
+
+[project.optional-dependencies]
+fast = ["numba>=0.63.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dwabi"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src/dwabi", "README.md", "pyproject.toml", "LICENSE"]

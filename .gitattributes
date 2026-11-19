@@ -1,0 +1,6 @@
+src/dwabi/*.py -text whitespace=cr-at-eol
+results/fev/*.csv -text
+results/fev/native/*.csv -text
+results/fev/native/*.json -text
+results/fev/native/controls/**/*.csv -text
+results/fev/native/controls/**/*.json -text
