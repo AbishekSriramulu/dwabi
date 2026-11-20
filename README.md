@@ -87,4 +87,4 @@ The default objective is pinball loss across all supplied levels. `objective="ab
 
 Keep `full_roster=True` while collecting forecasts for future updates. Use `full_roster=False` to run the current selected members only. Existing backcast forecasts can be supplied directly to `observe`. `explain(issue_at)` returns the subset, weights and supporting origins without model calls.
 
-The benchmark adapter fits the point policy from earlier FEV data and evaluates it on the complete later benchmark. The library also accepts independent, user-supplied forecasts. Model weights and evaluation data are downloaded separately for benchmark reproduction under their original terms.
+The benchmark adapter fits the point policy from earlier FEV data and evaluates it on the complete later benchmark. The library also accepts independent, user-supplied forecasts. Model weights and evaluation data are downloaded separately for benchmark reproduction under their original terms. [FEV setup, fit and runtime measurements](docs/FEV.md)
