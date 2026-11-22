@@ -6,7 +6,7 @@ D-wabi combines forecasts from fixed pretrained models. Each FEV task learns its
 
 FEV constructs the forecast windows. Each provider receives the history and future inputs returned by `EvaluationWindow.get_input_data()`. Declared known-future values span the forecast horizon. Past-only covariates stop at the recipient's cutoff. Static covariates retain their declared role. Providers can use the fields their architectures support. For example, the stock Toto-2 adapter consumes target history. Where recipient cutoffs differ within one FEV window, D-wabi groups recipients by their actual cutoff for inference and restores FEV's original row order. FEV determines the cadence, missing observations, minimum and maximum context, horizon, quantile levels and scoring settings. [FEV's forecast-time data contract](https://github.com/autogluon/fev/blob/844509e5211292620fbd9d5f24695f1d27da767a/src/fev/task.py#L60-L111)
 
-Chronos-2 target-encodes categorical covariates when forecasting a single target. If that recipient's entire target history is missing, its encoder has no response to fit. For this provider only, D-wabi marks the unencodable categories as missing and passes the numeric drivers through. The fallback applied to one recipient during calibration and zero recipients in the official forecast windows. [Chronos-2 input handling](../src/dwabi/fev/chronos_missing.py)
+Chronos-2 target-encodes categorical covariates when forecasting a single target. If that recipient's entire target history is missing, its encoder has no response to fit. For this provider only, D-wabi marks the unencodable categories as missing and passes the numeric drivers through. [Chronos-2 input handling](../src/dwabi/fev/chronos_missing.py)
 
 ## How it fits the combination
 

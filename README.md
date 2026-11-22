@@ -2,7 +2,11 @@
 
 D-wabi combines a user-supplied roster of at least three forecasters. It estimates forecast combinations from earlier issues whose outcomes are available and shares the fitted decision with the caller. Each member supplies quantiles on the same forecast cases.
 
-Install with `pip install dwabi`. On the pinned 100-task FEV-Bench snapshot, D-wabi ranks first on SQL win rate and skill with systems enabled and closed APIs excluded. Including closed APIs gives first on overall win rate and second on skill. D-wabi ranks first on both SQL measures in the 20-task Retail panel in either field. The scores use FEV’s original covariates and forecast windows. [Verified results and reproduction instructions](https://github.com/AbishekSriramulu/dwabi/tree/main/results/fev/native) · [Python package](https://pypi.org/project/dwabi/0.1.2/) · [Upstream FEV pull request](https://github.com/autogluon/fev/pull/214)
+## Install
+
+```sh
+python -m pip install dwabi
+```
 
 Uses ci-proto, released by Continuous Intelligence. Continuous Intelligence does not endorse or approve this product or service. The D-wabi Python package is MIT-licensed and ships without model weights. The published FEV configuration uses noncommercial checkpoints. For commercial forecasting, supply models and data licensed for your intended use. [Package license](https://github.com/AbishekSriramulu/dwabi/blob/v0.1.2/LICENSE) · [Benchmark licenses and attribution](https://github.com/AbishekSriramulu/dwabi/tree/main/results/fev/native#licensing)
 
@@ -20,7 +24,7 @@ print(ensemble.evaluate(test))
 
 `train` and `test` are Polars DataFrames with `unique_id`, `ds` and `y` columns. The current panel interface supports a shared cutoff and a regular time grid. Supply an explicit frequency such as `"1d"` when the cadence cannot be inferred. `models` maps names to callables. Each receives a `ForecastRequest` and returns its forecasts keyed by series and timestamp, with quantile columns named `q0.1` through `q0.9` by default.
 
-Pass `validation=validation` to use a designated later segment. With either input, fitting issues historical forecasts from growing prefixes. D-wabi uses only earlier complete windows for each selection decision. `n_windows` controls the backtest budget. Twelve windows is a development default. Each member still receives the full observed prefix at each issue. Forecasts use the full equal pool until three usable windows support a shortlist.
+Pass `validation=validation` to use a designated later segment. With either input, fitting issues historical forecasts from growing prefixes. D-wabi uses only earlier complete windows for each selection decision. `n_windows` controls the backtest budget. The default is twelve windows. Each member still receives the full observed prefix at each issue. Forecasts use the full equal pool until three usable windows support a shortlist.
 
 Declare genuinely known-future predictors in `known_future` and provide their issue-time values to `predict(future=...)`. The panel interface uses timestamps as the label-availability clock. Use the issued-forecast interface below for publication delays or separately recorded feature vintages. `evaluate(test)` reports held error with the fitted blend and preserves its decision.
 

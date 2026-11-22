@@ -1,28 +1,6 @@
-# D-wabi on the 100-task FEV-Bench
+# Reproduce D-wabi on FEV-Bench
 
-On the pinned FEV comparison snapshot, D-wabi ranks first on scaled quantile loss (SQL) by win rate across all 100 tasks. It ranks first on overall SQL skill when closed APIs are excluded and second when they are included. It ranks first on both SQL measures in the 20-task Retail panel in either field. [FEV submission](https://github.com/autogluon/fev/pull/214) · [Task scores](FEV_EXPORT.csv) · [All 16 comparisons](ranks.csv)
-
-## Headline SQL
-
-The final two columns give the score and rank. Win rate averages pairwise task comparisons, giving half credit to ties. Skill is one minus the geometric mean of task error ratios to Seasonal Naive, after FEV’s imputation and clipping. The dashboard hides systems by default. Enable systems to include D-wabi. Both fields include noncommercial models. [FEV evaluator](https://github.com/autogluon/fev/blob/844509e5211292620fbd9d5f24695f1d27da767a/src/fev/analysis.py) · [Retail membership](../retail_tasks.json)
-
-| Panel | Tasks | Closed APIs | Systems and models | Win rate · rank | Skill · rank |
-| --- | ---: | --- | ---: | ---: | ---: |
-| Overall | 100 | Off | 36 | 92.17% · 1 | 51.59% · 1 |
-| Overall | 100 | On | 41 | 89.975% · 1 | 51.59% · 2 |
-| Retail | 20 | Off | 36 | 94.57% · 1 | 46.93% · 1 |
-| Retail | 20 | On | 41 | 92.25% · 1 | 46.93% · 1 |
-
-## Ranks on every published metric
-
-Each cell gives win-rate rank / skill rank. The evaluator uses its published rules for missing or pretraining-flagged competitor scores. D-wabi has a finite score on every task for all four metrics. [Machine-readable ranks, rates and field leaders](ranks.csv)
-
-| Panel | Closed APIs | SQL | WQL | WAPE | MASE |
-| --- | --- | ---: | ---: | ---: | ---: |
-| Overall | Off | 1 / 1 | 1 / 1 | 1 / 3 | 1 / 3 |
-| Overall | On | 1 / 2 | 1 / 3 | 2 / 5 | 1 / 5 |
-| Retail | Off | 1 / 1 | 2 / 2 | 2 / 2 | 2 / 3 |
-| Retail | On | 1 / 1 | 1 / 3 | 3 / 5 | 3 / 6 |
+The archived task scores and ranks use the pinned FEV snapshot below. Enable the Systems category in the FEV dashboard to include system submissions. [Task scores](FEV_EXPORT.csv) · [Archived ranks](ranks.csv) · [Upstream submission and timing](https://github.com/autogluon/fev/pull/214)
 
 ## Evaluation and reproduction
 
