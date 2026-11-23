@@ -1,5 +1,7 @@
 # D-wabi
 
+Developed by [**RabbitHawk**](https://rabbithawk.com/).
+
 D-wabi combines a user-supplied roster of at least three forecasters. It estimates forecast combinations from earlier issues whose outcomes are available and shares the fitted decision with the caller. Each member supplies quantiles on the same forecast cases.
 
 ## Install
